@@ -3,12 +3,16 @@ from fizz_buzz import FizzBuzz
 
 class FizzBuzzTestCase(unittest.TestCase):
 
-    def test_play(self):
+    def setUp(self):
+        self.fizz_buzz = FizzBuzz()
 
-        """prints Fizz if the number is divisible by 3"""
-        fizz_buzz = FizzBuzz()
-        self.assertEqual(fizz_buzz.play(3), 'Fizz')
+    def test_play_delivers_fizz_with_multiple_of_3(self):
+        self.assertEqual(self.fizz_buzz.play(3), 'Fizz')
+
+    def test_play_accepts_only_numbers(self):
+        self.assertRaises(ValueError, self.fizz_buzz.play, 'two')
+
 
 
 if __name__ == '__main__':
- unittest.main()
+  unittest.main()
