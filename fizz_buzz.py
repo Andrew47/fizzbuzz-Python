@@ -4,6 +4,8 @@ class FizzBuzz(object):
     def play(self, number):
         if isinstance(number, basestring):
             raise ValueError
+        if number % 15 == 0:
+            return 'FizzBuzz'
         if number % 3 == 0:
             return 'Fizz'
         if number % 5 == 0:

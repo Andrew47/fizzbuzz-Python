@@ -21,6 +21,12 @@ class FizzBuzzTestCase(unittest.TestCase):
     def test_play_delivers_buzz_with_multiple_of_10(self):
         self.assertEqual(self.fizz_buzz.play(10), 'Buzz')
 
+    def test_play_delivers_fizzbuzz_with_multiple_of_15(self):
+        self.assertEqual(self.fizz_buzz.play(15), 'FizzBuzz')
+
+    def test_play_delivers_fizzbuzz_with_multiple_of_30(self):
+        self.assertEqual(self.fizz_buzz.play(30), 'FizzBuzz')
+
 
 
 if __name__ == '__main__':
