@@ -1,9 +1,8 @@
 class FizzBuzz(object):
-    """The FizzBuzz Class"""
 
     def play(self, number):
         if isinstance(number, basestring):
-            raise ValueError
+            raise Exception('Does not accept strings')
         if self._is_divisible_by(number, 15):
             return 'FizzBuzz'
         if self._is_divisible_by(number, 3):
