@@ -17,7 +17,7 @@ The repository should be cloned and the directory changed into:
 $ git clone git@github.com:Andrew47/fizzbuzz-Python.git
 $ cd fizzbuzz-Python
 ```
-* Open the command line, and run following:
+Open the command line, and run following:
 
 ```
 $ python
@@ -30,6 +30,6 @@ This will return 'Fizz'. Replace 3 with another integer to get different return 
 
 ##Author
 
-*[Andrew Burnie](https://github.com/Andrew47)
+* [Andrew Burnie](https://github.com/Andrew47)
 
 
